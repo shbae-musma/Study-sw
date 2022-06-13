@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Drama list 앱',
+      title: 'Drama 리스트 앱',
       home: ListScreen(),
     );
   }
