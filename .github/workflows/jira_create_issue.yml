@@ -23,7 +23,7 @@ jobs:
       uses: atlassian/gajira-create@master
       with:
         project: SWTEAM
-        issuetype: TODO
+        issuetype: Task
         summary: |
           Build completed for ${{ github.repository }}
 
