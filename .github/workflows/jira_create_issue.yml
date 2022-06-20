@@ -16,7 +16,6 @@ jobs:
         with:
           jiraBaseUrl: https://musmagroup.atlassian.net
           project: SWTEAM
-          squad: Corda
           issuetype: Bug
           summary: ${{ github.event.issue.title }}
           labels: community
