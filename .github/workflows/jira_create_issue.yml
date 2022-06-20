@@ -22,10 +22,12 @@ jobs:
       id: create
       uses: atlassian/gajira-create@master
       with:
-        project: SWTEAM
+        project: SWTEAM-253
         issuetype: Task
         summary: |
-          Build completed for ${{ github.repository }}
+          ${{ github.issue.title }}
+        description: |
+          ${{ github.issue.body }}
 
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
