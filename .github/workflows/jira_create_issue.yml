@@ -5,7 +5,7 @@ on:
     types: [opened]
 
 jobs:
-  update_jira:
+  create_jira_task:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -22,7 +22,7 @@ jobs:
       id: create
       uses: atlassian/gajira-create@master
       with:
-        project: SWTEAM-253
+        project: SWTEAM
         issuetype: Task
         summary: |
           ${{ github.issue.title }}
