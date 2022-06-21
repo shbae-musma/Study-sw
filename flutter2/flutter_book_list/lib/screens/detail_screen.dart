@@ -15,16 +15,16 @@ class DetailScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(children: [
             Image.network(drama.image),
-            const Padding(padding: EdgeInsets.all(3)),
+            const Padding(padding: EdgeInsets.all(13)),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 0.8,
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(20),
                   child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           drama.title,
